@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.sena.edu.co/Style%20Library/alayout/images/logoSena.png?rev=40">
+    <title>Registro de Huellas Dactilares</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro Biométrico</h2>
+    <p>Por favor, coloque el dedo índice en el escáner para cada mano.</p>
+
+    <div class="fingerprint-section">
+        
+        <div class="hand-card" id="left-hand">
+            <span class="material-symbols-outlined icon-huella">fingerprint</span>
+            <h3>Mano Izquierda</h3>
+            <button class="btn-registrar">
+                <span class="material-symbols-outlined">sensors</span>
+                Escanear Izquierda
+            </button>
+            <div class="status-badge">Listo para capturar</div>
+        </div>
+
+        <div class="hand-card active" id="right-hand">
+            <span class="material-symbols-outlined icon-huella">fingerprint</span>
+            <h3>Mano Derecha</h3>
+            <button class="btn-registrar">
+                <span class="material-symbols-outlined">sensors</span>
+                Escanear Derecha
+            </button>
+            <div class="status-badge">Listo para capturar</div>
+        </div>
+
+    </div>
+    <br>
+    <button class="btn btn-glow w-100" type="button"><a href="/loading.html" class="custom-link fw-bold">CONTINUAR</a></button>
+</div>
+
+</body>
+</html>

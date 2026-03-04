@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://www.sena.edu.co/Style%20Library/alayout/images/logoSena.png?rev=40">
+    <!-- <meta http-equiv="refresh" content="0; url=/login"> -->
+    <title>Redirigiendo...</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/Icons/background.jpeg');
+            font-family: Arial, sans-serif;
+        }
+
+        .loader {
+            border: 15px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 15px 25px rgba(0,0,0,.6);
+            border-top: 15px solid #02d914;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    <div class="loader"></div>
+</head>
+<body>
+</body>
+</html>

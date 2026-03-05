@@ -9,17 +9,26 @@ body {
     font-family: 'Roboto';
     /* Fondo con gradiente oscuro y la imagen que proporcionaste */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/Icons/background.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    animation: moveBackground 30s linear infinite;
+    background-size: 80%;
     color: #fff;
      display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    
 }
+
+@keyframes moveBackground {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: 100% center;
+    }
+}
+
 
 /* =========================================
    CONTENEDORES GLASSMORPHISM (Efecto Cristal)

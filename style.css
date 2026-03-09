@@ -10,14 +10,15 @@ body {
     /* Fondo con gradiente oscuro y la imagen que proporcionaste */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/Icons/background.jpeg');
     animation: moveBackground 30s linear infinite;
-    background-size: 80%;
+    background-size: 68%;
     color: #fff;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    
+    transition: all 0.3s ease;
+
 }
 
 @keyframes moveBackground {
@@ -149,6 +150,11 @@ body {
 .footer-text {
     font-size: 0.85rem;
     color: rgba(232, 252, 235, 0.74);
+    background: rgba(10, 10, 10, 0.55);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border: 2px solid rgba(170, 209, 170, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 

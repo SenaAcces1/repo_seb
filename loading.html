@@ -7,8 +7,7 @@
     <title>Redirigiendo...</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
-
-        
+        /* Body independiente */
         body {
             display: flex;
             justify-content: center;
@@ -17,8 +16,9 @@
             margin: 0;
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/Icons/background.jpeg');
             font-family: Arial, sans-serif;
+            animation: moveBackground 30s linear infinite;
+            background-size: 68%;
         }
-
         .loader {
             border: 15px solid rgba(255, 255, 255, 0.3);
             box-shadow: 0 15px 25px rgba(0,0,0,.6);
@@ -28,14 +28,25 @@
             height: 60px;
             animation: spin 1s linear infinite;
         }
-
+        
+        /* Keyframes para animaciones */
+        
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+            @keyframes moveBackground {
+        from {
+            background-position: 0% center;
+        }
+        to {
+            background-position: 100% center;
+        }
+}
     </style>
-    <div class="loader"></div>
 </head>
 <body>
+    <div class="loader"></div>
 </body>
 </html>
